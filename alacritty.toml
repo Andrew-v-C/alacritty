@@ -1,10 +1,16 @@
 
+[terminal]
+shell = { program = "pwsh", args = ["-NoLogo",] }
+
+[general]
+import = ["themes/nightfox.toml",]
+
 [window]
 dimensions = { columns = 150, lines = 30 }
 padding = { x = 8, y = 8 }
 
 [font]
-normal = { family = "JetBrainsMonoNL Nerd Font" }
+normal = { family = "JetBrainsMonoNL NF", style = "Regular" }
 size = 10
 
 [cursor]
@@ -15,6 +21,12 @@ blink_timeout = 0
 [mouse]
 hide_when_typing = true
 
-[terminal]
-shell = { program = "pwsh", args = ["-NoLogo",] }
+[keyboard]
+bindings = [
+{ key = "N", mods = "Control|Shift", action = "CreateNewWindow" },
+{ key = "Enter", mods = "Alt", action = "ReceiveChar" },
+{ key = "F11", action = "ToggleFullscreen" },
+{ key = "Insert", mods = "Control", action = "Copy" },
+{ key = "Insert", mods = "Shift", action = "Paste" },
+]
 
