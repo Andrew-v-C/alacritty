@@ -1,6 +1,7 @@
 
 [terminal]
-shell = { program = "pwsh", args = ["-NoLogo",] }
+# shell = { program = "pwsh", args = ["-NoLogo",] }
+shell = { program = "bash", args = [] }
 
 [general]
 import = ["themes/nightfox.toml",]
@@ -11,7 +12,7 @@ padding = { x = 8, y = 8 }
 
 [font]
 normal = { family = "JetBrainsMonoNL NF", style = "Regular" }
-size = 10
+size = 11
 
 [cursor]
 style = { shape = "Beam", blinking = "On" }
