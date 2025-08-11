@@ -19,6 +19,7 @@ size = 10
 style = { shape = "Beam", blinking = "On" }
 blink_interval = 500
 blink_timeout = 0
+thickness = 0.1
 
 [mouse]
 hide_when_typing = true
