@@ -6,20 +6,21 @@ shell = { program = "pwsh", args = ["-NoLogo",] }
 [general]
 import = ["themes/nightfox.toml",]
 
+[font]
+normal = { family = "JetBrainsMonoNL NF", style = "Regular" }
+size = 10
+
 [window]
 dimensions = { columns = 150, lines = 30 }
 padding = { x = 8, y = 8 }
 dynamic_title = false
-
-[font]
-normal = { family = "JetBrainsMonoNL NF", style = "Regular" }
-size = 10
 
 [cursor]
 style = { shape = "Beam", blinking = "On" }
 blink_interval = 500
 blink_timeout = 0
 thickness = 0.1
+unfocused_hollow = false
 
 [mouse]
 hide_when_typing = true
